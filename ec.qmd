@@ -1,17 +1,25 @@
 ---
 title: "Economic Connectedness"
-author: "David Kane"
+author: "Vibha Dara"
 format: html
+execute: 
+  echo: false
+  messaging: false
+  warning: false
 ---
 
 
 ```{r}
-#| echo: false
-#| message: false
 library(tidyverse)
 ```
 
 ```{r}
+read_csv("data/social_capital_county.csv", show_col_types = FALSE) |>
+  select(county_name, pop2018, ec_county) |>
+    mutate(state = str_replace())
+```
 
+```{r}
+summary(x)
 ```
 
